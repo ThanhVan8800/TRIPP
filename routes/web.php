@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DiaDanhController;
 use App\Http\Controllers\Admin\HinhAnhController;
 use App\Http\Controllers\Admin\VungMienController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers;
 
 /*
@@ -45,6 +46,7 @@ Route::middleware(['auth'])->group(function(){
             // Route::get('add',[UserController::class,'create']);
             // Route::post('add',[UserController::class,'store']);// menu validate form xác thực 
             // Route::get('edit',[UserController::class,'edit']);
+            // Route::resource('user',UserController::class);
             Route::resource('user',UserController::class);
             Route::resource('post',PostAdminController::class);
             Route::resource('diadanh',DiaDanhController::class);  
@@ -52,6 +54,7 @@ Route::middleware(['auth'])->group(function(){
             Route::resource('hinhanh',HinhAnhController::class);   
             Route::resource('cmt',CommentAdminController::class);
             Route::resource('vungmien', VungMienController::class);
+            Route::resource('chat',ChatController::class);
         });
         
     });

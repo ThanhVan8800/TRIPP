@@ -86,7 +86,15 @@
                     <a href="/admin/user/cmt" class="nav-link">
                     <i class="far fa-comments"></i>
                     <p>
-                          Quản lí bình luận
+                            Quản lí bình luận
+                    </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/user/chat" class="nav-link">
+                    <i class="far fa-comments"></i>
+                    <p>
+                            Chat
                     </p>
                     </a>
                 </li>
